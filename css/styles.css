@@ -1,0 +1,100 @@
+:root {
+/* Standard de colores */
+  --cprimario: #1687a7;
+  --csecundario: #f2a154;
+  --cprimarioOscuro: #276678;
+  --csecundarioOscuro: #da723c;
+  --coscuro: #314e52;
+  --cclaro: #f7f6e7;
+
+/* Standard de fuentes */
+  --fprincipal: 'Oxygen', sans-serif; /* 400 */
+  --ftitulos: 'Brygada 1918', serif; /* 300 700 */
+  --fespecial: 'Lateef', cursive; /* 400 */
+
+  --fregular: 400;
+  --fbold: 700;
+  --flight: 300;
+}
+
+/* Globales */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  color: var(--coscuro);
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+h1, h2, h3 {
+  text-align: center;
+  font-family: var(--ftitulos);
+}
+p {
+  font-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.contenedor {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+/* titulo principal */
+.titulo {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header__logo {
+  margin-top: 2rem;
+  width: 8.5rem;
+}
+
+/* Navegacion principal */
+.navegacion {
+  background-color: var(--cprimario);
+  display: flex;
+  justify-content: space-around;
+  border-radius: .5rem;
+}
+.navegacion__enlace {
+  color: var(--cclaro);
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-radius: .5rem;
+}
+.navegacion__enlace:hover {
+  background-color: var(--csecundario);
+}
+.navegacion__enlace--hover {
+  background-color: var(--csecundario);
+}
+
+/* Contenido principal */
+.contenedor__titulo {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+}
